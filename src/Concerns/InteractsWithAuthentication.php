@@ -8,41 +8,6 @@ use PHPUnit\Framework\Assert as PHPUnit;
 trait InteractsWithAuthentication
 {
     /**
-     * Log into the application as the default user.
-     *
-     * @return $this
-     */
-    public function login()
-    {
-        return $this->loginAs(call_user_func(Browser::$userResolver));
-    }
-
-    /**
-     * Log into the application using a given user ID or email.
-     *
-     * @param  object|string  $userId
-     * @param  string         $guard
-     * @return $this
-     */
-    public function loginAs($userId, $guard = null)
-    {
-        $userId = method_exists($userId, 'getKey') ? $userId->getKey() : $userId;
-
-        return $this->visit(rtrim('/_dusk/login/'.$userId.'/'.$guard, '/'));
-    }
-
-    /**
-     * Log out of the application.
-     *
-     * @param  string  $guard
-     * @return $this
-     */
-    public function logout($guard = null)
-    {
-        return $this->visit(rtrim('/_dusk/logout/'.$guard, '/'));
-    }
-
-    /**
      * Get the ID and the class name of the authenticated user.
      *
      * @param  string|null  $guard
