@@ -1,14 +1,6 @@
 {
     "name": "tpccdaniel/dusk-secure",
     "description": "Dusk secure is dusk for browser automation only.",
-    "keywords": ["laravel", "webdriver"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Daniel Munn",
-            "email": ""
-        }
-    ],
     "require": {
         "php": ">=7.1.0",
         "facebook/webdriver": "~1.3",
