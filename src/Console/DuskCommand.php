@@ -16,7 +16,7 @@ class DuskCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dusk {--without-tty : Disable output to TTY}';
+    protected $signature = 'dusksecure {--without-tty : Disable output to TTY}';
 
     /**
      * The console command description.

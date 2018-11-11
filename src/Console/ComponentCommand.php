@@ -11,7 +11,7 @@ class ComponentCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'dusk:component {name : The name of the class}';
+    protected $signature = 'dusksecure:component {name : The name of the class}';
 
     /**
      * The console command description.

@@ -11,7 +11,7 @@ class PageCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'dusk:page {name : The name of the class}';
+    protected $signature = 'dusksecure:page {name : The name of the class}';
 
     /**
      * The console command description.

@@ -11,7 +11,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dusk:install';
+    protected $signature = 'dusksecure:install';
 
     /**
      * The console command description.

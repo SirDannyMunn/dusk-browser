@@ -9,7 +9,7 @@ class DuskFailsCommand extends DuskCommand
      *
      * @var string
      */
-    protected $signature = 'dusk:fails {--without-tty : Disable output to TTY}';
+    protected $signature = 'dusksecure:fails {--without-tty : Disable output to TTY}';
 
     /**
      * The console command description.

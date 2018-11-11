@@ -11,7 +11,7 @@ class MakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'dusk:make {name : The name of the class}';
+    protected $signature = 'dusksecure:make {name : The name of the class}';
 
     /**
      * The console command description.
