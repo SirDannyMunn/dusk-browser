@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Tpccdaniel\DuskSecure;
 
 use Closure;
 use BadMethodCallException;
@@ -12,8 +12,7 @@ use Facebook\WebDriver\Remote\WebDriverBrowserType;
 
 class Browser
 {
-    use Concerns\InteractsWithAuthentication,
-        Concerns\InteractsWithCookies,
+    use Concerns\InteractsWithCookies,
         Concerns\InteractsWithElements,
         Concerns\InteractsWithJavascript,
         Concerns\InteractsWithMouse,
@@ -345,8 +344,8 @@ class Browser
     /**
      * Set the current component state.
      *
-     * @param  \Laravel\Dusk\Component  $component
-     * @param  \Laravel\Dusk\ElementResolver  $parentResolver
+     * @param  \Tpccdaniel\DuskSecure\Component  $component
+     * @param  \Tpccdaniel\DuskSecure\ElementResolver  $parentResolver
      * @return void
      */
     public function onComponent($component, $parentResolver)
