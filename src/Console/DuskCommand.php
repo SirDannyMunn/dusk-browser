@@ -23,7 +23,7 @@ class DuskCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Run the Dusk tests for the application';
+    protected $description = 'Run the Dusk dusk for the application';
 
     /**
      * Indicates if the project has its own PHPUnit configuration.
@@ -107,7 +107,7 @@ class DuskCommand extends Command
     protected function purgeScreenshots()
     {
         $files = Finder::create()->files()
-                        ->in(base_path('tests/Browser/screenshots'))
+                        ->in(base_path('dusk/Browser/screenshots'))
                         ->name('failure-*');
 
         foreach ($files as $file) {
@@ -123,7 +123,7 @@ class DuskCommand extends Command
     protected function purgeConsoleLogs()
     {
         $files = Finder::create()->files()
-            ->in(base_path('tests/Browser/console'))
+            ->in(base_path('dusk/Browser/console'))
             ->name('*.log');
 
         foreach ($files as $file) {

@@ -47,7 +47,7 @@ class ComponentCommand extends GeneratorCommand
     {
         $name = str_replace_first($this->rootNamespace(), '', $name);
 
-        return $this->laravel->basePath().'/tests'.str_replace('\\', '/', $name).'.php';
+        return $this->laravel->basePath().'/dusk'.str_replace('\\', '/', $name).'.php';
     }
 
     /**
@@ -68,6 +68,6 @@ class ComponentCommand extends GeneratorCommand
      */
     protected function rootNamespace()
     {
-        return 'Tests';
+        return 'Dusk';
     }
 }

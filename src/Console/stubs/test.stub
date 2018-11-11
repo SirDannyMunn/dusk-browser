@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Tests\DuskTestCase;
+use Dusk\DuskTestCase;
 use Laravel\Dusk\Browser;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 

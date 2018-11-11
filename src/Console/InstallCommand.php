@@ -37,27 +37,27 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        if (! is_dir(base_path('tests/Browser/Pages'))) {
-            mkdir(base_path('tests/Browser/Pages'), 0755, true);
+        if (! is_dir(base_path('dusk/Browser/Pages'))) {
+            mkdir(base_path('dusk/Browser/Pages'), 0755, true);
         }
 
-        if (! is_dir(base_path('tests/Browser/Components'))) {
-            mkdir(base_path('tests/Browser/Components'), 0755, true);
+        if (! is_dir(base_path('dusk/Browser/Components'))) {
+            mkdir(base_path('dusk/Browser/Components'), 0755, true);
         }
 
-        if (! is_dir(base_path('tests/Browser/screenshots'))) {
+        if (! is_dir(base_path('dusk/Browser/screenshots'))) {
             $this->createScreenshotsDirectory();
         }
 
-        if (! is_dir(base_path('tests/Browser/console'))) {
+        if (! is_dir(base_path('dusk/Browser/console'))) {
             $this->createConsoleDirectory();
         }
 
         $stubs = [
-            'ExampleTest.stub' => base_path('tests/Browser/ExampleTest.php'),
-            'HomePage.stub' => base_path('tests/Browser/Pages/HomePage.php'),
-            'DuskTestCase.stub' => base_path('tests/DuskTestCase.php'),
-            'Page.stub' => base_path('tests/Browser/Pages/Page.php'),
+            'ExampleTest.stub' => base_path('dusk/Browser/ExampleTest.php'),
+            'HomePage.stub' => base_path('dusk/Browser/Pages/HomePage.php'),
+            'DuskTestCase.stub' => base_path('dusk/DuskTestCase.php'),
+            'Page.stub' => base_path('dusk/Browser/Pages/Page.php'),
         ];
 
         foreach ($stubs as $stub => $file) {
@@ -76,9 +76,9 @@ class InstallCommand extends Command
      */
     protected function createScreenshotsDirectory()
     {
-        mkdir(base_path('tests/Browser/screenshots'), 0755, true);
+        mkdir(base_path('dusk/Browser/screenshots'), 0755, true);
 
-        file_put_contents(base_path('tests/Browser/screenshots/.gitignore'), '*
+        file_put_contents(base_path('dusk/Browser/screenshots/.gitignore'), '*
 !.gitignore
 ');
     }
@@ -90,9 +90,9 @@ class InstallCommand extends Command
      */
     protected function createConsoleDirectory()
     {
-        mkdir(base_path('tests/Browser/console'), 0755, true);
+        mkdir(base_path('dusk/Browser/console'), 0755, true);
 
-        file_put_contents(base_path('tests/Browser/console/.gitignore'), '*
+        file_put_contents(base_path('dusk/Browser/console/.gitignore'), '*
 !.gitignore
 ');
     }

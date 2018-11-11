@@ -16,7 +16,7 @@ class DuskFailsCommand extends DuskCommand
      *
      * @var string
      */
-    protected $description = 'Run the failing Dusk tests from the last run and stop on failure';
+    protected $description = 'Run the failing Dusk files from the last run and stop on failure';
 
     /**
      * Get the array of arguments for running PHPUnit.

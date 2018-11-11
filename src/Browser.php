@@ -443,7 +443,7 @@ class Browser
     }
 
     /**
-     * Stop running tests but leave the browser open.
+     * Stop running dusk but leave the browser open.
      *
      * @return void
      */
