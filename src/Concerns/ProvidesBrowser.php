@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Tpccdaniel\DuskSecure\Concerns;
 
 use Closure;
 use Exception;
 use Throwable;
 use ReflectionFunction;
-use Laravel\Dusk\Browser;
+use Tpccdaniel\DuskSecure\Browser;
 use Illuminate\Support\Collection;
 
 trait ProvidesBrowser
@@ -55,7 +55,7 @@ trait ProvidesBrowser
      * Create a new browser instance.
      *
      * @param  \Closure  $callback
-     * @return \Laravel\Dusk\Browser|void
+     * @return \Tpccdaniel\DuskSecure\Browser|void
      * @throws \Exception
      * @throws \Throwable
      */
@@ -106,7 +106,7 @@ trait ProvidesBrowser
      * Create a new Browser instance.
      *
      * @param  \Facebook\WebDriver\Remote\RemoteWebDriver  $driver
-     * @return \Laravel\Dusk\Browser
+     * @return \Tpccdaniel\DuskSecure\Browser
      */
     protected function newBrowser($driver)
     {

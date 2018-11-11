@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Tpccdaniel\DuskSecure;
 
 use Exception;
-use Laravel\Dusk\Chrome\SupportsChrome;
+use Tpccdaniel\DuskSecure\Chrome\SupportsChrome;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
 use Illuminate\Foundation\Testing\TestCase as FoundationTestCase;

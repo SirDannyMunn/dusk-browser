@@ -2,7 +2,7 @@
 
 namespace Dusk\Browser\Pages;
 
-use Laravel\Dusk\Page as BasePage;
+use Tpccdaniel\DuskSecure\Page as BasePage;
 
 abstract class Page extends BasePage
 {

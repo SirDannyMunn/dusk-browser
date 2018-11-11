@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Concerns;
+namespace Tpccdaniel\DuskSecure\Concerns;
 
 use Illuminate\Support\Str;
 use PHPUnit\Framework\Assert as PHPUnit;

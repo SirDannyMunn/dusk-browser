@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Chrome;
+namespace Tpccdaniel\DuskSecure\Chrome;
 
 use RuntimeException;
 use Illuminate\Support\Str;

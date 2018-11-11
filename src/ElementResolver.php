@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk;
+namespace Tpccdaniel\DuskSecure;
 
 use Exception;
 use Illuminate\Support\Str;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Dusk\Console;
+namespace Tpccdaniel\DuskSecure\Console;
 
 use Illuminate\Console\GeneratorCommand;
 
