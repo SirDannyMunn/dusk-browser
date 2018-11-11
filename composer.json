@@ -1,12 +1,12 @@
 {
-    "name": "laravel/dusk",
-    "description": "Laravel Dusk provides simple end-to-end testing and browser automation.",
-    "keywords": ["laravel", "testing", "webdriver"],
+    "name": "tpccdaniel/dusk-secure",
+    "description": "Dusk secure is dusk for browser automation only.",
+    "keywords": ["laravel", "webdriver"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Daniel Munn",
+            "email": ""
         }
     ],
     "require": {
