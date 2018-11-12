@@ -58,6 +58,7 @@ class InstallCommand extends Command
             'HomePage.stub' => base_path('dusk/Browser/Pages/HomePage.php'),
             'DuskTestCase.stub' => base_path('dusk/DuskTestCase.php'),
             'Page.stub' => base_path('dusk/Browser/Pages/Page.php'),
+            'Browser.stub' => base_path('app/Browser/Browser.php')
         ];
 
         foreach ($stubs as $stub => $file) {
