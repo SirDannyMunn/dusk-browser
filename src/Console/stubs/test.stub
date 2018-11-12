@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Dusk\DuskTestCase;
+use App\Browser\DuskTestCase;
 use Tpccdaniel\DuskSecure\Browser;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 

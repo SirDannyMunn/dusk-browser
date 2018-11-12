@@ -18,7 +18,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install Dusk into the application';
+    protected $description = 'Install Dusksecure into the application';
 
     /**
      * Create a new command instance.
@@ -37,27 +37,27 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        if (! is_dir(base_path('dusk/Browser/Pages'))) {
-            mkdir(base_path('dusk/Browser/Pages'), 0755, true);
+        if (! is_dir(base_path('app/Browser/Pages'))) {
+            mkdir(base_path('app/Browser/Pages'), 0755, true);
         }
 
-        if (! is_dir(base_path('dusk/Browser/Components'))) {
-            mkdir(base_path('dusk/Browser/Components'), 0755, true);
+        if (! is_dir(base_path('app/Browser/Components'))) {
+            mkdir(base_path('app/Browser/Components'), 0755, true);
         }
 
-        if (! is_dir(base_path('dusk/Browser/screenshots'))) {
+        if (! is_dir(base_path('storage/app/dusk/screenshots'))) {
             $this->createScreenshotsDirectory();
         }
 
-        if (! is_dir(base_path('dusk/Browser/console'))) {
+        if (! is_dir(base_path('storage/app/dusk/console'))) {
             $this->createConsoleDirectory();
         }
 
         $stubs = [
-            'ExampleTest.stub' => base_path('dusk/Browser/ExampleTest.php'),
-            'HomePage.stub' => base_path('dusk/Browser/Pages/HomePage.php'),
-            'DuskTestCase.stub' => base_path('dusk/DuskTestCase.php'),
-            'Page.stub' => base_path('dusk/Browser/Pages/Page.php'),
+            'ExampleTest.stub' => base_path('app/Browser/ExampleTest.php'),
+            'HomePage.stub' => base_path('app/Browser/Pages/HomePage.php'),
+            'DuskTestCase.stub' => base_path('app/Browser/DuskTestCase.php'),
+            'Page.stub' => base_path('app/Browser/Pages/Page.php'),
             'Browser.stub' => base_path('app/Browser/Browser.php')
         ];
 

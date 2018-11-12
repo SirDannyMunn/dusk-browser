@@ -107,7 +107,7 @@ class DuskCommand extends Command
     protected function purgeScreenshots()
     {
         $files = Finder::create()->files()
-                        ->in(base_path('dusk/Browser/screenshots'))
+                        ->in(base_path('storage/app/dusk/screenshots'))
                         ->name('failure-*');
 
         foreach ($files as $file) {
@@ -123,7 +123,7 @@ class DuskCommand extends Command
     protected function purgeConsoleLogs()
     {
         $files = Finder::create()->files()
-            ->in(base_path('dusk/Browser/console'))
+            ->in(base_path('storage/app/dusk/console'))
             ->name('*.log');
 
         foreach ($files as $file) {
