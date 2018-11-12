@@ -37,6 +37,10 @@ class InstallCommand extends Command
      */
     public function handle()
     {
+        if (! is_dir(base_path('app/Browser'))) {
+            mkdir(base_path('app/Browser'), 0755, true);
+        }
+
         if (! is_dir(base_path('app/Browser/Pages'))) {
             mkdir(base_path('app/Browser/Pages'), 0755, true);
         }
@@ -56,7 +60,6 @@ class InstallCommand extends Command
         $stubs = [
             'ExampleTest.stub' => base_path('app/Browser/ExampleTest.php'),
             'HomePage.stub' => base_path('app/Browser/Pages/HomePage.php'),
-            'DuskTestCase.stub' => base_path('app/Browser/DuskTestCase.php'),
             'Page.stub' => base_path('app/Browser/Pages/Page.php'),
             'Browser.stub' => base_path('app/Browser/Browser.php')
         ];

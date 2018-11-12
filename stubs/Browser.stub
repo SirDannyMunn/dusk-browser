@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Scrapers;
+namespace App\Browser;
 
 use Closure;
 use Exception;
