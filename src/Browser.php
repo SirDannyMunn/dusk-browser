@@ -108,6 +108,10 @@ class Browser
         $this->driver = $driver;
 
         $this->resolver = $resolver ?: new ElementResolver($driver);
+
+        Browser::$storeScreenshotsAt = base_path('storage/app/dusk/screenshots');
+
+        Browser::$storeConsoleLogAt = base_path('storage/app/dusk/console');
     }
 
     /**

@@ -89,10 +89,8 @@ class InstallCommand extends Command
      */
     protected function createConsoleDirectory()
     {
-        mkdir(base_path('dusk/Browser/console'), 0777, true);
+        mkdir(base_path('storage/app/dusk/console'), 0755, true);
 
-        file_put_contents(base_path('dusk/Browser/console/.gitignore'), '*
-!.gitignore
-');
+        file_put_contents(base_path('storage/app/dusk/console/.gitignore'), '*!.gitignore');
     }
 }
