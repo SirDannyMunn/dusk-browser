@@ -573,13 +573,8 @@ JS;
     public function assertPresent($selector)
     {
         $fullSelector = $this->resolver->format($selector);
-
-        PHPUnit::assertTrue(
-            ! is_null($this->resolver->find($selector)),
-            "Element [{$fullSelector}] is not present."
-        );
-
-        return $this;
+        
+        return ! is_null($this->resolver->find($selector));
     }
 
     /**
