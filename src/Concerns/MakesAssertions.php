@@ -570,10 +570,10 @@ JS;
      * @param  string  $selector
      * @return $this
      */
-    public function assertPresent($selector)
+    public function checkPresent($selector)
     {
         $fullSelector = $this->resolver->format($selector);
-        
+
         return ! is_null($this->resolver->find($selector));
     }
 
