@@ -107,8 +107,6 @@ trait InteractsWithCookies
      */
     public function getCookies()
     {
-        $this->driver->manage()->getCookies();
-
-        return $this;
+        return $this->driver->manage()->getCookies();
     }
 }
