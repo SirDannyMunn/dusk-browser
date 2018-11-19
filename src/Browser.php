@@ -109,9 +109,9 @@ class Browser
 
         $this->resolver = $resolver ?: new ElementResolver($driver);
 
-        Browser::$storeScreenshotsAt = base_path('storage/app/dusk/screenshots');
+        static::$storeScreenshotsAt = base_path('storage/app/dusk/screenshots');
 
-        Browser::$storeConsoleLogAt = base_path('storage/app/dusk/console');
+        static::$storeConsoleLogAt = base_path('storage/app/dusk/console');
     }
 
     /**
