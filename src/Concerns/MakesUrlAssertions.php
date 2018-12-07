@@ -6,6 +6,13 @@ use PHPUnit\Framework\Assert as PHPUnit;
 
 trait MakesUrlAssertions
 {
+    public function getUrl()
+    {
+        $url = $this->driver->getCurrentURL();
+
+        return $url;
+    }
+
     /**
      * Assert that the current URL matches the given URL.
      *
