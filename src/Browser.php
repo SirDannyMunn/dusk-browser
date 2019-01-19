@@ -112,6 +112,8 @@ class Browser
         static::$storeScreenshotsAt = base_path('storage/app/dusk/screenshots');
 
         static::$storeConsoleLogAt = base_path('storage/app/dusk/console');
+
+        $this->ensurejQueryIsAvailable();
     }
 
     /**
