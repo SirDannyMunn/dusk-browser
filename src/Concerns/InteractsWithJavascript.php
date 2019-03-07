@@ -37,6 +37,13 @@ trait InteractsWithJavascript
         return $this->script("return $('".$selector."').html()");
     }
 
+    public function jqueryClick($selector)
+    {
+        $this->script("return $('".$selector."').click()");
+
+        return $this;
+    }
+
     public function scroll($x, $y)
     {
         $this->script("window.scrollTo($x, $y);");
